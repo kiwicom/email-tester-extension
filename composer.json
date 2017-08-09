@@ -1,0 +1,45 @@
+{
+	"name": "kiwicom/email-testing-extension",
+	"description": "Provides configurable Email on Acid php sdk extension for Nette",
+	"keywords": [
+		"Nette",
+		"Email on Acid",
+		"email testing",
+		"spam testing"
+	],
+	"homepage": "https://www.kiwi.com",
+	"type": "library",
+	"license": [
+		"BSD-3-Clause",
+		"GPL-2.0",
+		"GPL-3.0"
+	],
+	"authors": [
+		{
+			"name": "Jan Bielik",
+			"homepage": "https://www.kiwi.com"
+		}
+	],
+	"require": {
+		"php": ">=7.1",
+		"nette/di": "^2.4@dev",
+		"tracy/tracy": "^2.4",
+		"kiwicom/email-on-acid-sdk": "^0.9"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "6.2.2",
+		"apigen/apigen": "5.0.0-RC3",
+		"roave/better-reflection": "@dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"NetteEmailOnAcid\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"NetteEmailOnAcid\\Tests\\": "tests/"
+		}
+	}
+
+}
